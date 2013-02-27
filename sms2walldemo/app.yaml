@@ -1,0 +1,10 @@
+application: sms2walldemo
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /openapi/.*
+  script: openapi.py
+- url: .*
+  script: main.py
